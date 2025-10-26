@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heroSection {
+  background-image: url("./images/restaurantImg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.heroSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.658);
+}
+
+.heroSection .container {
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  height: 100%;
+  width: 18rem;
+}
+
+@media screen and (min-width: 576) {
+  .card {
+    width: 100%;
+  }
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.row > .col {
+  display: flex;
+}
